@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-
+window.onload = function () {
   // Funkcja do ukrywania komponentów
   function hideComponent(selector) {
     const elements = document.querySelectorAll(selector);
@@ -10,4 +9,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Przykłady użycia
   hideComponent(".test-css"); // Ukryje wszystkie komponenty z klasą "test-css"
-});
+};
