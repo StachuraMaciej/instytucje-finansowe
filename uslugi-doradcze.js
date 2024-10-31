@@ -1,8 +1,14 @@
-// Zewnętrzny skrypt JavaScript
 document.addEventListener("DOMContentLoaded", function () {
-  // Ustawienie display: none na elemencie z klasą .test-css
-  const element = document.querySelector(".test-css");
-  if (element) {
-    element.style.display = "none";
+  console.log("Zewnętrzny skrypt AEM załadowany!");
+
+  // Funkcja do ukrywania komponentów
+  function hideComponent(selector) {
+    const elements = document.querySelectorAll(selector);
+    elements.forEach((element) => {
+      element.style.display = "none";
+    });
   }
+
+  // Przykłady użycia
+  hideComponent(".test-css"); // Ukryje wszystkie komponenty z klasą "test-css"
 });
