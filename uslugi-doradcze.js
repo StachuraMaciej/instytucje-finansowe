@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("Zewnętrzny skrypt AEM załadowany!");
 
   // Funkcja do ukrywania komponentów
   function hideComponent(selector) {
