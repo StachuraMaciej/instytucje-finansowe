@@ -1,5 +1,8 @@
 // Zewnętrzny skrypt JavaScript
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("Skrypt załadowany przez jsDelivr!");
-  // Twój kod JavaScript
+  // Ustawienie display: none na elemencie z klasą .test-css
+  const element = document.querySelector(".test-css");
+  if (element) {
+    element.style.display = "none";
+  }
 });
